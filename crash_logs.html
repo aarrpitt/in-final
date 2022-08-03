@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="title" content="Vajra Air Debug logs">
+  <meta name="description" content="Vajra Air Crash logs">
+  <title>{{res.title}}</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdn.datatables.net/1.10.24/css/dataTables.bootstrap.min.css" rel="stylesheet"/>
+</head>
+
+<body class="container">
+    <br>
+    <br>
+    <table id="example" cellspacing="0" width="100%" class="table table-striped table-bordered table-sm">
+      <thead>
+        <tr>
+          <th class="th-sm">User Id
+          </th>
+          <th class="th-sm">Stack Trace
+          </th>
+          <th class="th-sm">Error Type
+          </th>
+          <th class="th-sm">Error File
+          </th>
+          <th class="th-sm">Response Code
+          </th>
+          <th class="th-sm">IP Address
+          </th>
+          <th class="th-sm">Version
+          </th>
+          <th class="th-sm">Date/Time
+          </th>
+
+        </tr>
+      </thead>
+      <tbody>
+        {% for each in res.readings %}
+            <tr>
+              <td>{{each.user_id}}</td>
+              <td>{{each.stack_trace}}</td>
+              <td>{{each.error_type}}</td>
+              <td>{{each.error_file}}</td>
+              <td>{{each.response_code}}</td>
+              <td>{{each.ip_address}}</td>
+              <td>{{each.version}}</td>
+              <td>{{each.time}}</td>
+            </tr>
+
+        {% endfor %}
+      </tbody>
+    </table>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.24/js/dataTables.bootstrap.min.js"></script>
+    <script>
+      $('#example').dataTable( {
+  "pageLength": 1000,
+  "lengthMenu": [[ 1000, 2000, -1], [ 1000, 2000, "All"]]
+} );
+    </script>
+</body>
+</html>

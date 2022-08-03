@@ -1,0 +1,111 @@
+/*! Place your custom styles here */
+
+.card{
+    margin: 0% 0%;
+    border: 1px thin #000000;
+    padding-top: 18px;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-bottom: 2px;
+    
+    /* border-style: none; */
+  }
+  
+  .card-body{
+    margin: 0% 0% 0% 3%;
+    padding: 6% 0%;
+    padding-bottom: 2px;
+  }
+  
+.class1, .class2{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 2px;
+
+}  
+
+#card1{
+    margin-right: 0;
+   
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#card3{
+    margin-right: 0;
+    padding-top: 0;
+    /* margin-top: -10px; */
+    margin-bottom: 0;
+}
+#card4{
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+.card-body{
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+#card2{
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+.card-img-top{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.card h5{
+    margin-bottom: 2px;
+}
+
+.card p{
+    margin-bottom: 2px ;
+}
+
+.impact{
+    
+    background-image: url("C:\Indra tasks\Task 1 Landing Page Design\img\ocean-banner.jpg");
+    background-size: cover;
+}
+
+.prod h2{
+    /* text-align: center; */
+    padding-left: 420px;
+}
+
+
+
+.abt1{
+    /* color: #778899 !important; */
+    text-align: left;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+#wtd{
+    font-size: 40px;
+}
+
+.pp li img{
+   height: 400px !important;
+    /* width: 1px; */
+}
+
+.pos{
+    text-align: center;
+}
+
+
+
+
+
+/* .class2{
+    background-color: blueviolet;
+} */
+/* .class3{
+    background-color: blueviolet;
+} */
+
