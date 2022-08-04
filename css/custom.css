@@ -98,6 +98,20 @@
     text-align: center;
 }
 
+.slideee{
+  
+    height: 300px;
+    width: 400px !important;
+}
+.slider{
+    margin-top: 2px;
+}
+
+.slider img{
+    margin-right: 33% ;
+    margin-left: 33% ;
+}
+
 
 
 
